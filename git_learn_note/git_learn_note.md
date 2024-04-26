@@ -163,6 +163,8 @@ origin  git@github.com:UFO281/Simple_C_Language.git (push)
        git branch -M main /*指定分支的名称为main*/
        git push -u origin main:main //将本地main分支内容与远程仓库origin的main分支的内容关联起来 ，简写成 git push -u origin main
 
+        git pull -u origin main //将本地仓库的内容上传到远程仓库中去
+        git push -f origin main //强制将本地仓库的内容上传到远程仓库中去，并覆盖远程仓库
     2. git pull //将远程仓库的东西下载到本地仓库并且覆盖本地仓库。把本地仓库的内容替换成远程仓库的内容
 
 >![push && pull](image-17.png)
