@@ -1,5 +1,10 @@
 **---------------------Git Use Learn Note------------------------------**
 
+# git学习-先修知识：
+>**工作区：** 就是你电脑上的本地文件夹，类似本地生产车间   
+>**缓存区：** 是git系统中的一个缓存概念，暂时存放库文件，类似于仓库运输车   
+>**本地仓库：** 是git系统中的本地仓库，类似于工厂中存储仓库   
+
 # 1. Config User name and User Email
     1. git config --global user.name "wls"  //conifg git user name wls
     2. git config --global user.email ufo281@outlook.com  //conifg git user email 
@@ -127,3 +132,15 @@ fbd6c11 v1.0
     git diff master devlop //比较master分支与devlop分支的区别
 
 >![git diff](image-10.png)
+
+# 7. git rm file 删除文件
+**只能删除在缓存区中文件，然后再选择，是只在缓存区删除，还是再工作区也删除**
+
+    1. git rm c_example/1.0_user_printf/main_copy.c //将文件c_example/1.0_user_printf/main_copy.c 从工作区中删除了，然后再暂存区也删除了
+
+    2. git rm --cached c_example/1.0_user_printf/main_copy.c //将文件c_example/1.0_user_printf/main_copy.c 只把文件从暂存区中删除了，不删除工作区中的
+
+    3. git rm -r * //删除目录中的所有文件
+
+
+>![git rm](image-13.png)
