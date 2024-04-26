@@ -27,6 +27,22 @@
 > ![git commit](image-3.png)
 
 
+    3. git log //查看git commit的提交记录，就是从从暂存区提交到本地仓库的提交记录
+```
+wls@DESKTOP-S65BDJR:~/simple_c$ git log     /*使用git log命令 产看commit记录*/
+commit a9c1c7e319674f6c6f72aec637b3783503a09de8 (HEAD -> master)
+Author: wls <ufo281@outlook.com>
+Date:   Fri Apr 26 19:25:17 2024 +0800 /*commit 时间记录*/
+
+    add image-3.png     /*commit提交时候的备注*/
+
+commit fbd6c1152ffba03d7577eea2d066e7da3d8d782a /*commit 记录ID*/
+Author: wls <ufo281@outlook.com>
+Date:   Fri Apr 26 19:23:21 2024 +0800  /*commit 时间记录*/
+
+    v1.0   /*commit提交时候的备注*/
+```
+
 ## 4. Git 仓库状态查看
     1. git status  //查看仓库的修改状态 当前仓库处在什么分支，有哪些文件，文件处在什么状态
 
