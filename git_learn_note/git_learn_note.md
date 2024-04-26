@@ -154,7 +154,7 @@ fbd6c11 v1.0
 
 
 # 9. 远程仓库与本地仓库相关联
-    1. git remote add origin git@github.com:UFO281/Simple_C_Language.git //添加远程仓库的地址，将本地仓库与远程仓库相关联  
+    1. git remote add origin git@github.com:UFO281/Simple_C_Language.git //添加远程仓库的地址，将本地仓库与远程仓库相关联， origin 是远程仓库的名
 ```
 wls@DESKTOP-S65BDJR:~/simple_c$ git remote -v /*查看远程仓库的地址*/
 origin  git@github.com:UFO281/Simple_C_Language.git (fetch) /* 远程仓库别名: origin  */
