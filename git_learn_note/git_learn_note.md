@@ -150,3 +150,19 @@ fbd6c11 v1.0
 >![.gitignore文件](image-14.png)
 >![alt text](image-15.png)
 >![alt text](image-16.png)
+
+
+
+# 9. 远程仓库与本地仓库相关联
+    1. git remote add origin git@github.com:UFO281/Simple_C_Language.git //添加远程仓库的地址，将本地仓库与远程仓库相关联  
+```
+wls@DESKTOP-S65BDJR:~/simple_c$ git remote -v /*查看远程仓库的地址*/
+origin  git@github.com:UFO281/Simple_C_Language.git (fetch) /* 远程仓库别名: origin  */
+origin  git@github.com:UFO281/Simple_C_Language.git (push)
+```
+       git branch -M main /*指定分支的名称为main*/
+       git push -u origin main:main //将本地main分支内容与远程仓库origin的main分支的内容关联起来 ，简写成 git push -u origin main
+
+    2. git pull //将远程仓库的东西下载到本地仓库并且覆盖本地仓库。把本地仓库的内容替换成远程仓库的内容
+
+>![push && pull](image-17.png)
