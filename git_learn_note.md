@@ -42,8 +42,25 @@ Date:   Fri Apr 26 19:23:21 2024 +0800  /*commit 时间记录*/
 
     v1.0   /*commit提交时候的备注*/
 ```
+    4. git log --oneline //查看详细版的提交 commit 历史 
+```
+wls@DESKTOP-S65BDJR:~/simple_c$ git log --oneline 
+faf6c7e (HEAD -> master) new
+6352ab1 git_learn_note.md
+a9c1c7e add image-3.png
+fbd6c11 v1.0
+```
+
+
 
 ## 4. Git 仓库状态查看
-    1. git status  //查看仓库的修改状态 当前仓库处在什么分支，有哪些文件，文件处在什么状态
+    1. git status  //查看仓库的修改状态 当前仓库处在什么分支，有哪些文件，文件处在什么状态，未添加的，添加的，未提交的，提交的
 
+![not commit](image-7.png)
+![modified](image-8.png)
+
+## 5. git reset 回退到某个版本
+
+    1. git reset 
+> ![git reset](image-6.png)
 
