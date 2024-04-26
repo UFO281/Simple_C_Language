@@ -36,7 +36,7 @@ Date:   Fri Apr 26 19:25:17 2024 +0800 /*commit 时间记录*/
 
     add image-3.png     /*commit提交时候的备注*/
 
-commit fbd6c1152ffba03d7577eea2d066e7da3d8d782a /*commit 记录ID*/
+commit fbd6c1152ffba03d7577eea2d066e7da3d8d782a /*commit 记录*/
 Author: wls <ufo281@outlook.com>
 Date:   Fri Apr 26 19:23:21 2024 +0800  /*commit 时间记录*/
 
