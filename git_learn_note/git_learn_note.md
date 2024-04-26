@@ -142,5 +142,9 @@ fbd6c11 v1.0
 
     3. git rm -r * //删除目录中的所有文件
 
-
 >![git rm](image-13.png)
+
+# 8. .gitignore文件
+
+    1. .gitignore文件 是一个特殊的文件，其内容为禁止包含某些文件，上传到库中
+![.gitignore文件](image-14.png)
