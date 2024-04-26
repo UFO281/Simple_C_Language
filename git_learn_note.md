@@ -57,10 +57,17 @@ fbd6c11 v1.0
     1. git status  //查看仓库的修改状态 当前仓库处在什么分支，有哪些文件，文件处在什么状态，未添加的，添加的，未提交的，提交的
 
 ![not commit](image-7.png)
+
 ![modified](image-8.png)
+
+![oked~](image-9.png)
 
 ## 5. git reset 回退到某个版本
 
-    1. git reset 
+    1. git reset --soft 6352ab1 // "6352ab1" 要回退版本的ID 输入 git log --oneline 查看获得，/*soft 只是回退到上个版本到那时取消之前的commit 提交到本地仓库的东西 */
+
+    2. git reset --hard HEAD^ //回退到上一个版本，把这个版本 git add到暂存区的东西，和git commit -m "xxx" 提交到本地仓库的东西都给删除了
+
+    3. git reset HEAD^ //reset 默认为mixed，回退到上个版本后本次git add暂存区的东西会消失
 > ![git reset](image-6.png)
 
