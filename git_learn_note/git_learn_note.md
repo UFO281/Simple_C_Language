@@ -30,7 +30,34 @@
 > ![git commit](image-3.png)
 
 
-    3. git log //查看git commit的提交记录，就是从从暂存区提交到本地仓库的提交记录
+    3. git ls-files //查看暂存区中的文件有哪些 
+**如下所示：**
+```
+wls@DESKTOP-S65BDJR:~/simple_c$ git ls-files
+.vscode-ctags
+.vscode/c_cpp_properties.json
+c_example/1.0_user_printf/main.c
+c_example/1.0_user_printf/simple_c.code-workspace
+git_learn_note/git_learn_note.md
+git_learn_note/image-1.png
+git_learn_note/image-10.png
+git_learn_note/image-11.png
+git_learn_note/image-12.png
+git_learn_note/image-2.png
+git_learn_note/image-3.png
+git_learn_note/image-4.png
+git_learn_note/image-5.png
+git_learn_note/image-6.png
+git_learn_note/image-7.png
+git_learn_note/image-8.png
+git_learn_note/image-9.png
+git_learn_note/image.png
+git_learn_note/p1.png
+simple_c.code-workspace
+```
+
+    git log //查看git commit的提交记录，就是从从暂存区提交到本地仓库的提交记录
+**如下所示：**
 ```
 wls@DESKTOP-S65BDJR:~/simple_c$ git log     /*使用git log命令 产看commit记录*/
 commit a9c1c7e319674f6c6f72aec637b3783503a09de8 (HEAD -> master)
@@ -46,6 +73,7 @@ Date:   Fri Apr 26 19:23:21 2024 +0800  /*commit 时间记录*/
     v1.0   /*commit提交时候的备注*/
 ```
     4. git log --oneline //查看详细版的提交 commit 历史 
+**如下所示：**
 ```
 wls@DESKTOP-S65BDJR:~/simple_c$ git log --oneline 
 faf6c7e (HEAD -> master) new
