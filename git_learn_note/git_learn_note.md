@@ -1,18 +1,18 @@
-***---------------------Git Use Learn Note------------------------------***
+**---------------------Git Use Learn Note------------------------------**
 
-## 1. Config User name and User Email
+# 1. Config User name and User Email
     1. git config --global user.name "wls"  //conifg git user name wls
     2. git config --global user.email ufo281@outlook.com  //conifg git user email 
 
 
 
-## 2. Creat Git Repositories
+# 2. Creat Git Repositories
     1. git init //use this command init current directory to git Repositories
     /* 仓库文件都存放在了 当前目录下的.git文件里  */
 
 
 
-## 3. Git 添加 提交 工作原理流程图
+# 3. Git 添加 提交 工作原理流程图
 
 > ![Git 工作流程](image.png)
 
@@ -56,7 +56,7 @@ fbd6c11 v1.0
 
 
 
-## 4. Git 仓库状态查看
+# 4. Git 仓库状态查看
     1. git status  //查看仓库的修改状态 当前仓库处在什么分支，有哪些文件，文件处在什么状态，未添加的，添加的，未提交的，提交的
 
 ![not commit](image-7.png)
@@ -68,7 +68,7 @@ fbd6c11 v1.0
 
 
 
-## 5. git reset 回退到某个版本
+# 5. git reset 回退到某个版本
 
     1. git reset --soft 6352ab1 // "6352ab1" 要回退版本的ID 输入 git log --oneline 查看获得，/*soft 只是回退到上个版本到那时取消之前的commit 提交到本地仓库的东西 */
 
@@ -77,3 +77,25 @@ fbd6c11 v1.0
     3. git reset HEAD^ //reset 默认为mixed，回退到上个版本后本次git add暂存区的东西会消失
 > ![git reset](image-6.png)
 
+
+
+# 6. git diff
+
+    1. git diff //不加参数，默认查看，工作区与暂存区之间的差异
+>![git diff](p1.png)
+---
+    2. git diff HEAD //查看工作区与版本库之间的差异
+
+    3. git diff --cached //查看暂存区与版本库之间的差异
+---
+    4. git diff f458228 e8177f7 //根据commit id 来比较两个版本之间的差异内容
+**如下图**
+>![alt text](image-12.png)
+---
+    git diff HEAD~ HEAD //比较当前版本 HEAD表示当前版本，与上一个版本（HEAD^ / HEAD~表示）的的区别
+    git diff HEAD~2 HEAD //比较当前版本 HEAD表示当前版本，与倒数第3个版本的区别
+    git diff HEAD~3 HEAD //比较当前版本 HEAD表示当前版本，与倒数第4个版本的区别
+    git diff HEAD~2 HEAD git_learn_note/git_learn_note.md //比较当前版本 HEAD表示当前版本，与倒数第3个版本的 git_learn_note/git_learn_note.md文件的 区别
+    git diff master devlop //比较master分支与devlop分支的区别
+
+>![git diff](image-10.png)
