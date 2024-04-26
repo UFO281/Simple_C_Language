@@ -4,9 +4,13 @@
     1. git config --global user.name "wls"  //conifg git user name wls
     2. git config --global user.email ufo281@outlook.com  //conifg git user email 
 
+
+
 ## 2. Creat Git Repositories
     1. git init //use this command init current directory to git Repositories
     /* 仓库文件都存放在了 当前目录下的.git文件里  */
+
+
 
 ## 3. Git 添加 提交 工作原理流程图
 
@@ -21,7 +25,6 @@
 > ![git add. and git status](image-5.png)
 
 > ![rm such file and git status](image-4.png)
-
 
     2. git commit -m "v1.0" //把暂存区中的文件提交到本地仓库中去，此操作并不会把工作区中的文件提交到本地仓库中去
 > ![git commit](image-3.png)
@@ -61,6 +64,9 @@ fbd6c11 v1.0
 ![modified](image-8.png)
 
 ![oked~](image-9.png)
+
+
+
 
 ## 5. git reset 回退到某个版本
 
