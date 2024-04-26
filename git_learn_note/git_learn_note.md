@@ -147,4 +147,6 @@ fbd6c11 v1.0
 # 8. .gitignore文件
 
     1. .gitignore文件 是一个特殊的文件，其内容为禁止包含某些文件，上传到库中
-![.gitignore文件](image-14.png)
+>![.gitignore文件](image-14.png)
+>![alt text](image-15.png)
+>![alt text](image-16.png)
