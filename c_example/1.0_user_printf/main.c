@@ -41,7 +41,10 @@ int main(int number,char **par)
 {
 
     printf("who are you? \n");
-    printf("I AM  you1 \n");
+    printf("I AM  you! \n");
+    printf("\twhat??? \n");
+    printf("Yes! my name is you! \n");
+    printf("\t EE..... OK.... \n");
 
 
     return 0;
