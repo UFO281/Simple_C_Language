@@ -244,3 +244,7 @@ wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看所有本地分支*/
 >![alt text](image-20.png)
 >![push && pull](image-17.png) 
 ---
+
+
+# 11. 项目管理规范
+>![alt text](image-23.png)
