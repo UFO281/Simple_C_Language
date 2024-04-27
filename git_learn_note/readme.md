@@ -145,6 +145,8 @@ fbd6c11 v1.0
 
 >![git rm](image-13.png)
 
+
+
 # 8. .gitignore文件
 
     1. .gitignore文件 是一个特殊的文件，其内容为禁止包含某些文件，上传到库中
@@ -154,31 +156,17 @@ fbd6c11 v1.0
 
 
 
-# 9. 远程仓库与本地仓库相关联
-    1. git remote add origin git@github.com:UFO281/Simple_C_Language.git //添加远程仓库的地址，将本地仓库与远程仓库相关联， origin 是远程仓库的名
+# 9. 将远程仓库与本地仓库相关联
+添加远程仓库的地址，将本地仓库与远程仓库相关联   
+    
+    git remote add origin git@github.com:UFO281/Simple_C_Language.git  # origin 是远程仓库的名, 后边是远程仓库的地址
+    git remote -v /*查看远程仓库的地址*/
 ```
+use example:
 wls@DESKTOP-S65BDJR:~/simple_c$ git remote -v /*查看远程仓库的地址*/
 origin  git@github.com:UFO281/Simple_C_Language.git (fetch) /* 远程仓库别名: origin  */
 origin  git@github.com:UFO281/Simple_C_Language.git (push)
 ```
-    git branch -M main /*指定分支的名称为main*/
-    git push -u origin main:main //将本地main分支内容与远程仓库origin的main分支的内容关联起来 ，简写成 git push -u origin main
-
-    git pull -u origin main //将本地仓库的内容上传到远程仓库中去
-    git push -f origin main //强制将本地仓库的内容上传到远程仓库中去，并覆盖远程仓库
----
-    2. git pull origin main:main//更新本地仓库，将远程仓库的东西下载到本地仓库并且覆盖本地仓库。把本地仓库的内容替换成远程仓库的内容,
-    git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull
-<font color=red>git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull</font> 
-
->![alt text](image-19.png)
->![alt text](image-18.png)
-
-    3. git fetch //获取远程仓库的更改，但不会自动与本地仓库的分支合并，需要手动合并
->![alt text](image-20.png)
-
-
->![push && pull](image-17.png) 
 
 
 
@@ -224,3 +212,26 @@ wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看所有本地分支*/
 ## 10.7 查看分支历史
     git log --graph --oneline --decorate --all  # 查看分支合并历史
 
+## 10.8 推送本地分支到远程（简称：上传）
+    git push -u origin main:main //将本地main分支内容与远程仓库origin的main分支的内容关联起来 ，简写成 git push -u origin main
+
+    git push -u origin main //将本地仓库的内容上传到远程仓库中去
+    git push -f origin main //强制将本地仓库的内容上传到远程仓库中去，并覆盖远程仓库
+    git push origin wls:main # 将本地的wls分支,推送到 远程仓库的main分支。如果没有远程仓库没有main分支，则会自动在远程仓库创建一个main分支
+
+
+
+## 10.9 拉取远程分支到本地分支，也叫更新本地仓库分支（简称：下载）
+
+    1. git pull origin main:main//更新本地仓库，将远程仓库的东西下载到本地仓库并且覆盖本地仓库。把本地仓库的内容替换成远程仓库的内容,
+    git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull
+<font color=red>git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull</font> 
+
+>![alt text](image-19.png)
+>![alt text](image-18.png)
+
+    3. git fetch //获取远程仓库的更改，但不会自动与本地仓库的分支合并，需要手动合并
+>![alt text](image-20.png)
+
+
+>![push && pull](image-17.png) 
