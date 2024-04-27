@@ -188,16 +188,28 @@ origin  git@github.com:UFO281/Simple_C_Language.git (push)
 >![alt text](image-21.png)
 
 ## 10.1 创建分支
-    git branch //查看当前的分支数
-    git branch dev //创建dev分支
+    git branch dev       # 创建一个新分支 dev
+    git checkout -b dev  # 创建dev分支 并切换到dev新分支
 
 ```  
 Use Example:
 wls@DESKTOP-S65BDJR:~/simple_c$ git branch dev  /*创建dev分支*/
-wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看当前的分支*/
+wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看所有本地分支*/
   dev
 * main      /*当前的分支是main*/
 ```
-## 10.2 切换分支
 
-## 10.3 合并分支
+
+## 10.2 查看分支
+    git branch  # 列出所有本地分支
+    git branch -r  # 列出所有远程分支
+    git branch -a  # 列出所有本地和远程分支
+>![alt text](image-22.png)
+
+## 10.3 切换分支
+    git checkout dev  # 切换到dev分支
+    git checkout dev  # 切换到dev分支
+
+
+
+## 10.4 合并分支
