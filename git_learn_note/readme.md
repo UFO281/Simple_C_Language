@@ -210,6 +210,17 @@ wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看所有本地分支*/
     git checkout dev  # 切换到dev分支
     git switch dev  # 切换到dev分支
 
+## 10.4 删除分支
+    git branch -d dev  # 删除本地分支dev（注意：如果分支未合并到主分支，会提示错误）
+    git branch -D dev  # 强制删除本地分支dev（不管是否合并）
 
+## 10.5 合并分支
+    git merge dev  # 将指定分支dev,合并到当前分支main
 
-## 10.4 合并分支
+## 10.6 查看分支合并情况
+    git branch --merged  # 列出已合并到当前分支的分支
+    git branch --no-merged  # 列出未合并到当前分支的分支
+
+## 10.7 查看分支历史
+    git log --graph --oneline --decorate --all  # 查看分支合并历史
+
