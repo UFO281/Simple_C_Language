@@ -208,7 +208,7 @@ wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看所有本地分支*/
 
 ## 10.3 切换分支
     git checkout dev  # 切换到dev分支
-    git checkout dev  # 切换到dev分支
+    git switch dev  # 切换到dev分支
 
 
 
