@@ -178,6 +178,8 @@ origin  git@github.com:UFO281/Simple_C_Language.git (push)
 ## 10.1 创建分支
     git branch dev       # 创建一个新分支 dev
     git checkout -b dev  # 创建dev分支 并切换到dev新分支
+    git checkout -b dev 64c38dd # 创建dev分支 并切换到dev新分支内容为64c38dd版本的内容
+
 
 ```  
 Use Example:
