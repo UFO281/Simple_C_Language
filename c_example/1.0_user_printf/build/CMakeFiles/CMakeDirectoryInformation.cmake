@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/wls/Simple_C_Language/c_example/1.0_user_printf")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/wls/Simple_C_Language/c_example/1.0_user_printf")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/wls/Simple_C_Language/c_example/1.0_user_printf/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)
