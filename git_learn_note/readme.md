@@ -231,7 +231,6 @@ wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看所有本地分支*/
 
 
 ## 10.9 拉取远程分支到本地分支，也叫更新本地仓库分支（简称：下载）
-
     1. git pull origin main:main//更新本地仓库，将远程仓库的东西下载到本地仓库并且覆盖本地仓库。把本地仓库的内容替换成远程仓库的内容,
     git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull
 <font color=red>git pull //远程仓库分支和本地仓库分支相同，且前边push的时候使用了上游引用，仓库名和分支名可以省略 为git pull</font> 
