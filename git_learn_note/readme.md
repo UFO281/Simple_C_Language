@@ -168,7 +168,8 @@ origin  git@github.com:UFO281/Simple_C_Language.git (push)
     git push -f origin main //强制将本地仓库的内容上传到远程仓库中去，并覆盖远程仓库
 ---
     2. git pull origin main:main//更新本地仓库，将远程仓库的东西下载到本地仓库并且覆盖本地仓库。把本地仓库的内容替换成远程仓库的内容,
-       git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull
+    git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull
+<font color=red>git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull</font> 
 
 >![alt text](image-19.png)
 >![alt text](image-18.png)
@@ -178,3 +179,25 @@ origin  git@github.com:UFO281/Simple_C_Language.git (push)
 
 
 >![push && pull](image-17.png) 
+
+
+
+# 10. 分支Branch
+分支类似于，你把主版本进行复制后的副本，然后修改，更新啥的在副本上进行修改，修改之后，再把主版本给覆盖了
+>**--分支使用场景，多人协作时候，一人整一个分支在分支上进行修改添加**
+>![alt text](image-21.png)
+
+## 10.1 创建分支
+    git branch //查看当前的分支数
+    git branch dev //创建dev分支
+
+```  
+Use Example:
+wls@DESKTOP-S65BDJR:~/simple_c$ git branch dev  /*创建dev分支*/
+wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看当前的分支*/
+  dev
+* main      /*当前的分支是main*/
+```
+## 10.2 切换分支
+
+## 10.3 合并分支
