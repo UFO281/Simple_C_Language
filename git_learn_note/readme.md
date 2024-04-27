@@ -1,7 +1,6 @@
 # <center> <font color=white> `Git Use Learn Note` </font>
 
 
-
 # <font color=red>*Git学习-先修知识：*</font> 
 >**工作区：** 就是你电脑上的本地文件夹，类似本地生产车间   
 >**缓存区：** 是git系统中的一个缓存概念，暂时存放库文件，类似于仓库运输车   
