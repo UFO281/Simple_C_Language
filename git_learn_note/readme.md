@@ -219,19 +219,27 @@ wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看所有本地分支*/
     git push -f origin main //强制将本地仓库的内容上传到远程仓库中去，并覆盖远程仓库
     git push origin wls:main # 将本地的wls分支,推送到 远程仓库的main分支。如果没有远程仓库没有main分支，则会自动在远程仓库创建一个main分支
 
+`git push origin wls:main` 和 `git push -u origin wls:main` 这两个命令在基本功能上是一样的：它们都会将本地的 `wls` 分支推送到远程仓库的 `main` 分支。但是，它们之间有一个重要的区别，那就是 `-u` 或 `--set-upstream` 选项。
+1. `git push origin wls:main`
+   这个命令只执行推送操作，即将本地的 `wls` 分支推送到远程仓库的 `main` 分支。它不会设置任何上游（upstream）引用，也就是说，之后的 `git pull` 或 `git push` 命令不会自动知道应该与哪个远程分支进行交互，除非你明确指定。
+2. `git push -u origin wls:main`
+   这个命令除了执行推送操作外，还会设置本地的 `wls` 分支的上游引用为远程仓库的 `main` 分支。这意味着，在之后执行 `git pull` 或 `git push` 时，如果你没有指定远程仓库和分支，Git 会自动使用你之前设置的上游引用。这可以简化你的工作流程，因为你不需要每次都明确指定远程仓库和分支。  
+
+*设置上游引用的好处是，当你执行 `git pull` 时，Git 会知道要从哪个远程分支拉取更新，并自动合并到你的本地分支。同样地，当你执行 `git push` 时，如果没有指定目标分支，Git 会知道要推送到哪个远程分支。*  
+
+---
 
 
 ## 10.9 拉取远程分支到本地分支，也叫更新本地仓库分支（简称：下载）
 
     1. git pull origin main:main//更新本地仓库，将远程仓库的东西下载到本地仓库并且覆盖本地仓库。把本地仓库的内容替换成远程仓库的内容,
     git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull
-<font color=red>git pull //远程仓库分支和本地仓库分支相同，仓库名和分支名可以省略 为git pull</font> 
+<font color=red>git pull //远程仓库分支和本地仓库分支相同，且前边push的时候使用了上游引用，仓库名和分支名可以省略 为git pull</font> 
 
 >![alt text](image-19.png)
 >![alt text](image-18.png)
-
-    3. git fetch //获取远程仓库的更改，但不会自动与本地仓库的分支合并，需要手动合并
+---
+    2. git fetch //获取远程仓库的更改，但不会自动与本地仓库的分支合并，需要手动合并分支
 >![alt text](image-20.png)
-
-
 >![push && pull](image-17.png) 
+---
