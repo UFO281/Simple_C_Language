@@ -1,3 +1,0 @@
-/home/wls/Simple_C_Language/build/CMakeFiles/print.dir
-/home/wls/Simple_C_Language/build/CMakeFiles/edit_cache.dir
-/home/wls/Simple_C_Language/build/CMakeFiles/rebuild_cache.dir
