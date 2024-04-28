@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/wls/Simple_C_Language/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/print.dir/main.c.o -c /home/wls/Simple_C_Language/c_example/1.0_user_printf/main.c",
+  "file": "/home/wls/Simple_C_Language/c_example/1.0_user_printf/main.c"
+}
+]
