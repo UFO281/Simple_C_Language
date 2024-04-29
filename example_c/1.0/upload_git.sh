@@ -2,6 +2,6 @@ cd ../../../
 
 git add .
 
-git commit -m "modifiy main.c"
+git commit -m "modifiy readme"
 
-git push origin main
+git push origin master

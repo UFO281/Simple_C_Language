@@ -198,6 +198,7 @@ wls@DESKTOP-S65BDJR:~/simple_c$ git branch      /*查看所有本地分支*/
 ## 10.3 切换分支
     git checkout dev  # 切换到dev分支
     git switch dev  # 切换到dev分支
+    git push -f origin --delete main # 强制删除远程分支main
 
 ## 10.4 删除分支
     git branch -d dev  # 删除本地分支dev（注意：如果分支未合并到主分支，会提示错误）
