@@ -47,7 +47,7 @@ int main(int n,char **par)
 
 
     // number = additive_multi_int(1,2,3,4,5,6);
-    number = Additive_int(4,3);
+    number = Additive_int(1,3);
 
     printf("number value:%d \n",number);
 
