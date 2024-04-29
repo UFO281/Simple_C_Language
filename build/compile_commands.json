@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/wls/Simple_C_Language/build",
+  "command": "/usr/bin/gcc -Dlibmath0_EXPORTS -g -fPIC -o CMakeFiles/libmath0.dir/math0.c.o -c /home/wls/Simple_C_Language/example_c/1.0/math0.c",
+  "file": "/home/wls/Simple_C_Language/example_c/1.0/math0.c"
+},
+{
+  "directory": "/home/wls/Simple_C_Language/build",
+  "command": "/usr/bin/gcc -g -o CMakeFiles/hello.dir/main.c.o -c /home/wls/Simple_C_Language/example_c/1.0/main.c",
+  "file": "/home/wls/Simple_C_Language/example_c/1.0/main.c"
+}
+]
