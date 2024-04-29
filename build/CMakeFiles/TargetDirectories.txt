@@ -1,8 +1,0 @@
-/home/wls/Simple_C_Language/build/CMakeFiles/edit_cache.dir
-/home/wls/Simple_C_Language/build/CMakeFiles/rebuild_cache.dir
-/home/wls/Simple_C_Language/build/libmath/CMakeFiles/libmath0.dir
-/home/wls/Simple_C_Language/build/libmath/CMakeFiles/edit_cache.dir
-/home/wls/Simple_C_Language/build/libmath/CMakeFiles/rebuild_cache.dir
-/home/wls/Simple_C_Language/build/src/CMakeFiles/hello.dir
-/home/wls/Simple_C_Language/build/src/CMakeFiles/edit_cache.dir
-/home/wls/Simple_C_Language/build/src/CMakeFiles/rebuild_cache.dir
