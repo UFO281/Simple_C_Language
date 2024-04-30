@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../lib/libmath0.a CMakeFiles/libmath0.dir/math0.c.o
+/usr/bin/ranlib ../lib/libmath0.a

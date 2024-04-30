@@ -1,3 +1,3 @@
 # <center>this is C and github access and git learn use tutorial
 
-> **v1.1.3 #2024/4/29/23:42** 
+> **v1.2 #2024/4/30/19:21** 
